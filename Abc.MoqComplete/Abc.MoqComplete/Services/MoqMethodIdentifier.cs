@@ -10,7 +10,7 @@ using JetBrains.ReSharper.Psi.Resx.Utils;
 
 namespace Abc.MoqComplete.Services
 {
-	[SolutionComponent(Instantiation.DemandAnyThreadSafe)]
+	[SolutionComponent(Instantiation.DemandAnyThreadUnsafe)]
 	public class MoqMethodIdentifier : IMoqMethodIdentifier
 	{
 		/// <inheritdoc />

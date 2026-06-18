@@ -4,7 +4,7 @@ using JetBrains.ReSharper.Psi.CSharp.Tree;
 
 namespace Abc.MoqComplete.Services.MethodProvider
 {
-	[SolutionComponent(Instantiation.DemandAnyThreadSafe)]
+	[SolutionComponent(Instantiation.DemandAnyThreadUnsafe)]
 	public class AutoMockerMockedMethodProvider : BaseMethodProvider, IAutoMockerMockedMethodProvider
 	{
 		private readonly IMoqMethodIdentifier _methodIdentifier;

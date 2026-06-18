@@ -6,7 +6,7 @@ using JetBrains.ReSharper.Psi.Modules;
 
 namespace Abc.MoqComplete.Services
 {
-    [SolutionComponent(Instantiation.DemandAnyThreadSafe)]
+    [SolutionComponent(Instantiation.DemandAnyThreadUnsafe)]
     public class TestProjectProvider : ITestProjectProvider
     {
         private readonly Dictionary<string, bool> _isMoqContainedByProjectName = new Dictionary<string, bool>();

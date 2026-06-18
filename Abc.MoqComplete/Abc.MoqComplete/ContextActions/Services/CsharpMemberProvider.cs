@@ -11,7 +11,7 @@ using JetBrains.Util;
 
 namespace Abc.MoqComplete.ContextActions.Services
 {
-    [SolutionComponent(Instantiation.DemandAnyThreadSafe)]
+    [SolutionComponent(Instantiation.DemandAnyThreadUnsafe)]
     public class CsharpMemberProvider : ICsharpMemberProvider
     {
         public IEnumerable<string> GetConstructorParameters(IConstructor constructor) => constructor.Parameters.Select(s => s.Type.GetPresentableName(constructor.PresentationLanguage));
